@@ -80,9 +80,11 @@
   .follow{margin-top:1.5rem}
   .follow .flabel{text-transform:uppercase;letter-spacing:.25em;font-size:.68rem;color:var(--gold-light)}
   .follow .fsub{font-size:.8rem;color:var(--blush);opacity:.85;margin:.2rem 0 .6rem}
-  .follow .flinks{display:flex;flex-wrap:wrap;gap:.5rem;justify-content:center}
-  .follow a{display:inline-block;text-decoration:none;color:#fff;border:1px solid rgba(232,210,156,.6);border-radius:999px;padding:.4rem 1rem;font-size:.82rem;font-weight:700;letter-spacing:.04em}
-  .follow a small{font-weight:400;color:var(--gold-light);margin-left:.3rem}
+  .follow .flinks{display:grid;grid-template-columns:repeat(3,1fr);gap:.5rem;max-width:680px;margin:0 auto}
+  .follow a{position:relative;z-index:1;display:block;text-decoration:none;color:#fff;border:1px solid rgba(232,210,156,.6);border-radius:14px;padding:.45rem .6rem;text-align:center;cursor:pointer}
+  .follow a b{display:block;font-size:.82rem;font-weight:700;letter-spacing:.04em}
+  .follow a .url{display:block;font-size:.72rem;color:var(--gold-light);white-space:nowrap;text-decoration:underline;text-decoration-color:rgba(232,210,156,.5);text-underline-offset:2px}
+  @media (max-width:640px){.follow .flinks{grid-template-columns:1fr;max-width:340px}.follow a{padding:.55rem .8rem}.follow a .url{font-size:.78rem}}
   /* ---------- PRINT: US Letter, 2 pages ---------- */
   @page{size:Letter;margin:0}
   @media print{
@@ -127,8 +129,8 @@
     .letter .ltitle{font-size:12pt;margin-bottom:.04in}
     .letter p{font-size:9.3pt;line-height:1.42;margin-bottom:.05in}
     .letter .sign{font-size:11pt;margin-top:0}
-    .follow{margin-top:.13in}
-    .follow .flabel{margin-bottom:.06in}
+    .follow{margin-top:.09in}
+    .follow .flabel{margin-bottom:.04in}
     .qr img{max-width:1.1in}
     .qr-row{max-width:5.6in}
     .qr strong{font-size:10.5pt;white-space:nowrap;margin-bottom:.02in}
@@ -136,7 +138,10 @@
     .sheet2 .cta{padding-top:.18in;padding-bottom:.16in}
     .follow .fsub{font-size:8pt;margin:.02in 0 .07in}
     .follow .flabel{font-size:7.5pt}
-    .follow a{font-size:8.5pt;padding:.045in .16in}
+    .follow .flinks{grid-template-columns:repeat(3,1fr);max-width:6.7in;gap:.08in}
+    .follow a{padding:.04in .05in;border-radius:.1in}
+    .follow a b{font-size:8pt}
+    .follow a .url{font-size:7pt}
   }
 </style>
 </head>
@@ -219,9 +224,9 @@
       <div class="follow">
         <div class="flabel">Follow Along · Miss Long Island Pageants</div>
         <div class="flinks">
-          <a href="https://www.instagram.com/longislandpageants/" target="_blank" rel="noopener">Instagram<small>@longislandpageants</small></a>
-          <a href="https://www.tiktok.com/@misslongislandpageants" target="_blank" rel="noopener">TikTok<small>@misslongislandpageants</small></a>
-          <a href="https://www.facebook.com/LongIslandPageants/" target="_blank" rel="noopener">Facebook<small>/LongIslandPageants</small></a>
+          <a href="https://www.instagram.com/longislandpageants/" target="_blank" rel="noopener"><b>Instagram</b><span class="url">www.instagram.com/longislandpageants</span></a>
+          <a href="https://www.tiktok.com/@misslongislandpageants" target="_blank" rel="noopener"><b>TikTok</b><span class="url">www.tiktok.com/@misslongislandpageants</span></a>
+          <a href="https://www.facebook.com/LongIslandPageants/" target="_blank" rel="noopener"><b>Facebook</b><span class="url">www.facebook.com/LongIslandPageants</span></a>
         </div>
       </div>
     </section>
