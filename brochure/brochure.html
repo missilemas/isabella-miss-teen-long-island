@@ -76,6 +76,13 @@
   .letter p{font-size:.95rem;line-height:1.6;margin-bottom:.6rem}
   .letter a.inline{color:var(--navy);font-weight:700;text-decoration:underline;text-decoration-color:var(--gold);text-underline-offset:2px}
   .letter .sign{font-family:'Playfair Display',serif;font-style:italic;color:var(--navy);font-size:1.15rem;text-align:right;margin-top:.3rem}
+  /* ---------- FOLLOW ALONG ---------- */
+  .follow{margin-top:1.5rem}
+  .follow .flabel{text-transform:uppercase;letter-spacing:.25em;font-size:.68rem;color:var(--gold-light)}
+  .follow .fsub{font-size:.8rem;color:var(--blush);opacity:.85;margin:.2rem 0 .6rem}
+  .follow .flinks{display:flex;flex-wrap:wrap;gap:.5rem;justify-content:center}
+  .follow a{display:inline-block;text-decoration:none;color:#fff;border:1px solid rgba(232,210,156,.6);border-radius:999px;padding:.4rem 1rem;font-size:.82rem;font-weight:700;letter-spacing:.04em}
+  .follow a small{font-weight:400;color:var(--gold-light);margin-left:.3rem}
   /* ---------- PRINT: US Letter, 2 pages ---------- */
   @page{size:Letter;margin:0}
   @media print{
@@ -120,6 +127,14 @@
     .letter .ltitle{font-size:12pt;margin-bottom:.04in}
     .letter p{font-size:9.3pt;line-height:1.42;margin-bottom:.05in}
     .letter .sign{font-size:11pt;margin-top:0}
+    .follow{margin-top:.13in}
+    .follow .flabel{margin-bottom:.06in}
+    .qr img{max-width:1.1in}
+    .photos{max-width:3.9in}
+    .sheet2 .cta{padding-top:.18in;padding-bottom:.16in}
+    .follow .fsub{font-size:8pt;margin:.02in 0 .07in}
+    .follow .flabel{font-size:7.5pt}
+    .follow a{font-size:8.5pt;padding:.045in .16in}
   }
 </style>
 </head>
@@ -198,6 +213,15 @@
         </a>
       </div>
       <div class="site-wrap"><a class="btn btn-site" href="https://missilemas.github.io/isabella-miss-teen-long-island/" target="_blank" rel="noopener">Visit Isabella's Page</a></div>
+      <!-- Follow Along: Miss Long Island Pageants socials (added Oct 26 2026) -->
+      <div class="follow">
+        <div class="flabel">Follow Along · Miss Long Island Pageants</div>
+        <div class="flinks">
+          <a href="https://www.instagram.com/longislandpageants/" target="_blank" rel="noopener">Instagram<small>@longislandpageants</small></a>
+          <a href="https://www.tiktok.com/@misslongislandpageants" target="_blank" rel="noopener">TikTok<small>@misslongislandpageants</small></a>
+          <a href="https://www.facebook.com/LongIslandPageants/" target="_blank" rel="noopener">Facebook<small>/LongIslandPageants</small></a>
+        </div>
+      </div>
     </section>
 
     <footer>Isabella Simon · Miss Long Island Teen 2027 Contestant · Pageant info: <a href="https://www.lipageants.com" target="_blank" rel="noopener" style="color:var(--navy)">lipageants.com</a></footer>
