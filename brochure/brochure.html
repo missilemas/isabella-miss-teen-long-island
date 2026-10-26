@@ -70,6 +70,12 @@
     .photos{gap:.45rem}
     .btn-vote{display:block;padding:1.05rem 1rem}
   }
+  /* ---------- NOTE FROM ISABELLA ---------- */
+  .letter{max-width:540px;margin:1.4rem auto 0;background:#fff;border-radius:14px;padding:1.4rem 1.5rem 1.2rem;text-align:left;box-shadow:0 6px 20px rgba(27,42,74,.08);border-top:3px solid var(--gold)}
+  .letter .ltitle{font-family:'Playfair Display',serif;font-style:italic;color:var(--navy);font-size:1.15rem;text-align:center;margin-bottom:.6rem}
+  .letter p{font-size:.95rem;line-height:1.6;margin-bottom:.6rem}
+  .letter a.inline{color:var(--navy);font-weight:700;text-decoration:underline;text-decoration-color:var(--gold);text-underline-offset:2px}
+  .letter .sign{font-family:'Playfair Display',serif;font-style:italic;color:var(--navy);font-size:1.15rem;text-align:right;margin-top:.3rem}
   /* ---------- PRINT: US Letter, 2 pages ---------- */
   @page{size:Letter;margin:0}
   @media print{
@@ -104,6 +110,16 @@
     .site-wrap{margin-top:.14in}
     .cta .btn-site{padding:.07in .3in;font-size:10pt}
     footer{padding:.1in;font-size:8pt}
+    .platform{padding:.22in .6in .3in}
+    .portrait{width:2.35in;margin:.16in auto .12in}
+    .cover{padding:.3in .6in .24in}
+    .cover .btn-vote{margin-top:.12in;padding:.12in .5in;font-size:15pt}
+    .platform .title{font-size:21pt}
+    .platform .desc{font-size:10.5pt;margin-top:.02in}
+    .letter{max-width:6.6in;margin:.12in auto 0;padding:.13in .22in .1in;box-shadow:none;border:1px solid rgba(201,165,87,.45);border-top:3px solid var(--gold)}
+    .letter .ltitle{font-size:12pt;margin-bottom:.04in}
+    .letter p{font-size:9.3pt;line-height:1.42;margin-bottom:.05in}
+    .letter .sign{font-size:11pt;margin-top:0}
   }
 </style>
 </head>
@@ -133,6 +149,13 @@
       <div class="label" style="color:var(--rose);opacity:1">Her Platform</div>
       <div class="title">Beyond the Label</div>
       <p class="desc">Focusing on seeing the person, not their diagnosis.</p>
+      <!-- Isabella's support message (Oct 26 2026) -->
+      <div class="letter">
+        <div class="ltitle">A Note from Isabella</div>
+        <p>Hi everyone! I'm Isabella Simon, and I'm competing for Miss Long Island Teen 2027 on Sunday, November 1. My platform is Beyond the Label: seeing the person, not their diagnosis. The money raised through my platform goes to the <a class="inline" href="https://www.jtcf.org" target="_blank" rel="noopener">John Theissen Children's Foundation</a> in Wantagh, which has helped sick and underprivileged kids across Long Island since 1992 with holiday toys, rides to and from treatments, help with medical bills, and a free Family Fun Center where kids can just be kids.</p>
+        <p>Every People's Choice vote helps me support them, so I'd be so grateful for yours: <a class="inline" href="https://www.lipageants.com/peoples-choice/p/isabella-simon" target="_blank" rel="noopener">♥ Vote for Isabella</a>. Thank you so much for your support! 💕</p>
+        <div class="sign">— Isabella Simon</div>
+      </div>
     </section>
   </div>
 
