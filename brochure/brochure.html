@@ -45,10 +45,10 @@
   .platform .title{font-family:'Playfair Display',serif;font-size:clamp(1.6rem,6vw,2.2rem);color:var(--navy);font-style:italic}
   .platform .desc{max-width:480px;margin:.5rem auto 0;font-size:1.08rem}
   .photos{display:grid;grid-template-columns:1fr 1fr 1fr;gap:.7rem}
-  .photos img{display:block;width:100%;aspect-ratio:3/4;object-fit:cover;border-radius:12px;box-shadow:0 6px 18px rgba(27,42,74,.1)}
-  .photos .p-full{object-position:50% 12%}
+  .photos img{display:block;width:100%;aspect-ratio:2/3;object-fit:cover;border-radius:12px;box-shadow:0 6px 18px rgba(27,42,74,.1)}
+  .photos .p-full{object-position:50% 8%}
   .photos .p-portrait{object-position:50% 8%}
-  .photos .p-chin{object-position:50% 30%}
+  .photos .p-chin{object-position:68% 30%}
   .event{display:grid;grid-template-columns:repeat(3,1fr);gap:.8rem}
   .card{background:#fff;border-top:3px solid var(--gold);border-radius:14px;padding:1.1rem .8rem;text-align:center;box-shadow:0 5px 18px rgba(27,42,74,.07)}
   .card h3{text-transform:uppercase;letter-spacing:.2em;font-size:.7rem;color:var(--rose);margin-bottom:.35rem}
@@ -88,7 +88,7 @@
     .sheet2 section{padding:.22in .6in}
     .sheet2 section:nth-child(2){padding-top:0}
     .sheet2 .cta{flex:1;display:flex;flex-direction:column;justify-content:center;padding:.22in .8in}
-    .photos img{aspect-ratio:4/5}
+    .photos img{aspect-ratio:2/3}
     .photos{max-width:4.2in;margin:0 auto}
     .qr span{font-size:7pt;word-break:normal;white-space:nowrap}
     .qr-row{max-width:5.6in}
@@ -141,8 +141,9 @@
     <section>
       <h2>Meet Isabella</h2>
       <div class="photos">
-        <img class="p-full" src="img/3-gown-full.jpg" alt="Isabella Simon, Miss Long Island Teen 2027 contestant" width="689" height="1400">
+        <!-- Order per Simon Oct 26: forearm | full gown | fist on face -->
         <img class="p-portrait" src="img/4-gown-portrait.jpg" alt="Isabella Simon, Miss Long Island Teen 2027 contestant" width="1052" height="1400">
+        <img class="p-full" src="img/3-gown-full.jpg" alt="Isabella Simon, Miss Long Island Teen 2027 contestant" width="689" height="1400">
         <img class="p-chin" src="img/6-white-chin.jpg" alt="Isabella Simon, Miss Long Island Teen 2027 contestant" width="1080" height="939">
       </div>
     </section>
