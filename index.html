@@ -85,6 +85,16 @@
   .lightbox button{position:absolute;top:.8rem;right:1rem;background:none;border:0;color:#fff;font-size:2.4rem;line-height:1;cursor:pointer}
   @media (max-width:820px){.hero-inner{grid-template-columns:1fr;gap:2.5rem}.hero-portrait{max-width:300px}}
   @media (max-width:520px){.btn{width:100%;max-width:320px}.gallery{gap:.5rem}.gallery figure{border-radius:10px}.hero{padding:4rem 1rem 3.5rem}}
+  /* ---------- NOTE FROM ISABELLA ---------- */
+  .letter{position:relative;max-width:760px;margin:0 auto;background:#fff;border-radius:20px;padding:2.6rem 2.6rem 2.2rem;box-shadow:0 10px 34px rgba(27,42,74,.08);border-top:3px solid var(--gold)}
+  .letter::before{content:"\201C";position:absolute;top:-.15rem;left:1.3rem;font-family:'Playfair Display',serif;font-size:5.5rem;line-height:1;color:var(--blush)}
+  .letter p{position:relative;font-size:1.08rem;line-height:1.75;color:var(--text);margin-bottom:1rem}
+  .letter .lead-in{font-family:'Playfair Display',serif;font-style:italic;font-size:1.3rem;color:var(--navy)}
+  .letter a.inline{color:var(--navy);font-weight:700;text-decoration:underline;text-decoration-color:var(--gold);text-underline-offset:3px}
+  .letter .sign{font-family:'Playfair Display',serif;font-style:italic;font-size:1.5rem;color:var(--navy);margin:1.4rem 0 .1rem}
+  .letter .sign-title{text-transform:uppercase;letter-spacing:.2em;font-size:.72rem;color:var(--rose)}
+  .letter .letter-cta{margin-top:1.6rem;text-align:center}
+  @media (max-width:520px){.letter{padding:2.2rem 1.3rem 1.8rem;border-radius:16px}.letter p{font-size:1rem}.letter::before{font-size:4.5rem;left:.8rem}}
 </style>
 </head>
 <body>
@@ -112,6 +122,19 @@
 </header>
 
 <main>
+
+  <!-- ===== NOTE FROM ISABELLA (her support message, Oct 26 2026) ===== -->
+  <section id="note">
+    <h2>A Note from Isabella</h2>
+    <div class="letter">
+      <p class="lead-in">Hi everyone! I'm Isabella Simon, and I'm competing for Miss Long Island Teen 2027 on Sunday, November 1.</p>
+      <p>My platform is <strong>Beyond the Label</strong>: seeing the person, not their diagnosis. The money raised through my platform goes to the <a class="inline" href="https://www.jtcf.org" target="_blank" rel="noopener noreferrer">John Theissen Children's Foundation</a> in Wantagh, which has helped sick and underprivileged kids across Long Island since 1992 with holiday toys, rides to and from treatments, help with medical bills, and a free Family Fun Center where kids can just be kids.</p>
+      <p>Every People's Choice vote helps me support them, so I'd be so grateful for yours. Thank you so much for your support! 💕</p>
+      <div class="sign">Isabella Simon</div>
+      <div class="sign-title">Miss Long Island Teen 2027 Contestant</div>
+      <div class="letter-cta"><a class="btn btn-vote" href="https://www.lipageants.com/peoples-choice/p/isabella-simon" target="_blank" rel="noopener noreferrer">♥ Vote for Isabella</a></div>
+    </div>
+  </section>
 
   <!-- ===== PHOTOS =====
        To add a photo: save it in images/ and add another line like:
