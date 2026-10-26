@@ -72,16 +72,19 @@
   .hero-portrait{position:relative;justify-self:center;width:100%;max-width:400px}
   .hero-portrait::before{content:"";position:absolute;inset:-12px;border:1px solid var(--gold);border-radius:220px 220px 18px 18px;opacity:.7}
   .hero-portrait img{display:block;width:100%;aspect-ratio:4/5;height:auto;object-fit:cover;object-position:35% 0;padding-top:9%;background:#f5f5f8;border-radius:210px 210px 14px 14px;box-shadow:0 20px 50px rgba(0,0,0,.35)}
-  .gallery{columns:3 240px;column-gap:1rem}
-  .gallery figure{break-inside:avoid;margin:0 0 1rem;border-radius:14px;overflow:hidden;background:var(--blush);box-shadow:0 6px 20px rgba(27,42,74,.08);cursor:zoom-in}
-  .gallery img{display:block;width:100%;height:auto;transition:transform .35s}
+  .gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;max-width:900px;margin:0 auto}
+  .gallery figure{margin:0;border-radius:14px;overflow:hidden;background:var(--blush);box-shadow:0 6px 20px rgba(27,42,74,.08);cursor:zoom-in}
+  .gallery img{display:block;width:100%;height:auto;aspect-ratio:2/3;object-fit:cover;transition:transform .35s}
+  .gallery .p-portrait{object-position:50% 8%}
+  .gallery .p-full{object-position:50% 8%}
+  .gallery .p-chin{object-position:68% 30%}
   .gallery figure:hover img{transform:scale(1.03)}
   .lightbox{position:fixed;inset:0;background:rgba(18,29,53,.94);display:none;align-items:center;justify-content:center;z-index:50;padding:1.5rem;cursor:zoom-out}
   .lightbox.open{display:flex}
   .lightbox img{max-width:100%;max-height:100%;object-fit:contain;border-radius:8px;box-shadow:0 10px 40px rgba(0,0,0,.5)}
   .lightbox button{position:absolute;top:.8rem;right:1rem;background:none;border:0;color:#fff;font-size:2.4rem;line-height:1;cursor:pointer}
   @media (max-width:820px){.hero-inner{grid-template-columns:1fr;gap:2.5rem}.hero-portrait{max-width:300px}}
-  @media (max-width:520px){.btn{width:100%;max-width:320px}.gallery{columns:2;column-gap:.6rem}.gallery figure{margin-bottom:.6rem}.hero{padding:4rem 1rem 3.5rem}}
+  @media (max-width:520px){.btn{width:100%;max-width:320px}.gallery{gap:.5rem}.gallery figure{border-radius:10px}.hero{padding:4rem 1rem 3.5rem}}
 </style>
 </head>
 <body>
@@ -113,14 +116,14 @@
   <!-- ===== PHOTOS =====
        To add a photo: save it in images/ and add another line like:
        <figure><img src="images/new-photo.jpg" alt="Isabella Simon, Miss Long Island Teen 2027 contestant" loading="lazy" decoding="async"></figure>
-       Images show uncropped (masonry columns), so faces are never cut off. Tap/click opens the lightbox. -->
+       Equal-height 2:3 tiles (object-fit:cover, positions set per photo so faces stay in frame); the lightbox shows the full uncropped photo. Tap/click opens the lightbox. -->
   <section id="photos">
     <h2>Photos</h2>
     <div class="gallery">
-      <figure><img src="images/3-gown-full.jpg" alt="Isabella Simon, Miss Long Island Teen 2027 contestant" width="689" height="1400" loading="lazy" decoding="async"></figure>
-      <figure><img src="images/5-white-side.jpg" alt="Isabella Simon, Miss Long Island Teen 2027 contestant" width="1114" height="1113" loading="lazy" decoding="async"></figure>
-      <figure><img src="images/4-gown-portrait.jpg" alt="Isabella Simon, Miss Long Island Teen 2027 contestant" width="1052" height="1400" loading="lazy" decoding="async"></figure>
-      <figure><img src="images/6-white-chin.jpg" alt="Isabella Simon, Miss Long Island Teen 2027 contestant" width="1080" height="939" loading="lazy" decoding="async"></figure>
+      <!-- Order per Simon Oct 26: forearm | full gown | fist on face (5-white-side is the hero only) -->
+      <figure><img class="p-portrait" src="images/4-gown-portrait.jpg" alt="Isabella Simon, Miss Long Island Teen 2027 contestant" width="1052" height="1400" loading="lazy" decoding="async"></figure>
+      <figure><img class="p-full" src="images/3-gown-full.jpg" alt="Isabella Simon, Miss Long Island Teen 2027 contestant" width="689" height="1400" loading="lazy" decoding="async"></figure>
+      <figure><img class="p-chin" src="images/6-white-chin.jpg" alt="Isabella Simon, Miss Long Island Teen 2027 contestant" width="1080" height="939" loading="lazy" decoding="async"></figure>
     </div>
   </section>
 
